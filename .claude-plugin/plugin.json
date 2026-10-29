@@ -1,6 +1,6 @@
 {
   "name": "framelink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read Figma frames from your own machine and rebuild them as pixel-perfect code. A local bridge, a compact outline format, and a screenshot-free visual diff.",
   "author": {
     "name": "Sanjesh R G"

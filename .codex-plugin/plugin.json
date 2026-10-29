@@ -1,0 +1,34 @@
+{
+  "name": "framelink",
+  "version": "1.0.1",
+  "description": "Read Figma frames from your own machine and rebuild them as pixel-perfect code. A local bridge, a compact outline format, and a screenshot-free visual diff.",
+  "author": {
+    "name": "Sanjesh R G"
+  },
+  "homepage": "https://github.com/sanjesh17/framelink",
+  "repository": "https://github.com/sanjesh17/framelink",
+  "license": "MIT",
+  "keywords": [
+    "figma",
+    "mcp",
+    "design-to-code",
+    "pixel-perfect",
+    "frontend"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./codex.mcp.json",
+  "interface": {
+    "displayName": "FrameLink",
+    "shortDescription": "Figma to pixel-perfect frontend code, locally.",
+    "longDescription": "Reads your Figma selection through a local bridge as a compact outline or CSS, then checks your build against it with a visual diff. Nothing leaves your machine.",
+    "developerName": "Sanjesh R G",
+    "category": "Development",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Build my current Figma selection and verify it against the design.",
+      "Check the FrameLink connection to Figma."
+    ]
+  }
+}

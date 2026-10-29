@@ -1,6 +1,6 @@
 {
   "name": "@sanjeshh/framelink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read Figma selections from your own machine and rebuild them as pixel-perfect code with any MCP-capable AI agent (Claude Code, Codex, Antigravity)",
   "type": "module",
   "bin": {

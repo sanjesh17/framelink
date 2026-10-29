@@ -20195,7 +20195,7 @@ var WebSocketManager = class {
 };
 
 // src/mcp/link.ts
-var VERSION = false ? "dev" : "1.0.0";
+var VERSION = false ? "dev" : "1.0.1";
 var LeaderGone = class extends Error {
 };
 var readParams = ({ format = "outline", chunk }) => ({ format, chunk });

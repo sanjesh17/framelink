@@ -1,0 +1,20 @@
+{
+  "name": "framelink",
+  "interface": {
+    "displayName": "FrameLink"
+  },
+  "plugins": [
+    {
+      "name": "framelink",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development"
+    }
+  ]
+}

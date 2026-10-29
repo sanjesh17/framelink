@@ -34,4 +34,4 @@ Reproduce sizes, spacing, colours, radii, shadows, fonts and text exactly as giv
 
 ## Connection problems
 
-If a tool says the plugin is not connected, run `/framelink:setup`.
+If a tool says the plugin is not connected, call `connection_diagnostics`: it starts the bridge, prints the Figma plugin path and says what to do next. (In Claude Code, `/framelink:setup` does this and walks you through it.)

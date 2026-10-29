@@ -34,8 +34,24 @@ claude mcp add --scope user framelink -- npx -y @sanjeshh/framelink
 
 **Codex** *(configuration documented, not yet tested)*
 
+As a plugin, with the skill included and no npm needed:
+
+```sh
+codex plugin marketplace add sanjesh17/framelink
+```
+
+Then install FrameLink from the Plugins directory in Codex and ask the agent to call `connection_diagnostics`.
+
+Or just the MCP server, from npm:
+
 ```sh
 codex mcp add framelink -- npx -y @sanjeshh/framelink
+```
+
+or from a clone of this repo, without npm:
+
+```sh
+codex mcp add framelink -- node /path/to/framelink/dist/mcp.cjs
 ```
 
 or in `~/.codex/config.toml`:
@@ -180,6 +196,7 @@ npm run bench     # token sizes of sample frames (SHOW="small card" FORMAT=css p
 | `plugin/` | Figma plugin source: reads nodes, builds the outline and CSS |
 | `figma-plugin/` | The packed plugin to import into Figma |
 | `.claude-plugin/`, `.mcp.json`, `commands/`, `skills/` | The Claude Code plugin |
+| `.codex-plugin/`, `.agents/`, `codex.mcp.json` | The Codex plugin and marketplace. Its MCP config finds the bundle in Codex's plugin cache, because `${CLAUDE_PLUGIN_ROOT}` is Claude-only |
 
 ## License
 

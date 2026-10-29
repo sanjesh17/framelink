@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "framelink": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "-e",
+        "const fs=require('fs'),path=require('path'),os=require('os');const base=path.join(process.env.CODEX_HOME||path.join(os.homedir(),'.codex'),'plugins','cache');const roots=[process.env.PLUGIN_ROOT,process.env.CLAUDE_PLUGIN_ROOT];try{for(const m of fs.readdirSync(base)){const d=path.join(base,m,'framelink');try{for(const v of fs.readdirSync(d).sort((a,b)=>b.localeCompare(a,undefined,{numeric:true})))roots.push(path.join(d,v))}catch{}}}catch{}const hit=roots.filter(Boolean).map(r=>path.join(r,'dist','mcp.cjs')).find(f=>fs.existsSync(f));if(!hit){process.stderr.write('framelink: dist/mcp.cjs not found in the Codex plugin cache\\n');process.exit(1)}process.argv[1]=hit;require(hit)"
+      ]
+    }
+  }
+}
