@@ -1,0 +1,12 @@
+node_modules/
+# dist/ and figma-plugin/ are committed: the Claude plugin runs them straight from a checkout
+.DS_Store
+*.log
+npm-debug.log*
+*.tgz
+.env
+.env.local
+.env.*.local
+.vscode/
+.codex/
+plugin/dist/

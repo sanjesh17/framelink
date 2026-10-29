@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "framelink",
+  "description": "FrameLink: Figma to pixel-perfect frontend code, locally.",
+  "owner": { "name": "Sanjesh R G" },
+  "plugins": [
+    {
+      "name": "framelink",
+      "description": "Read a Figma selection as a compact outline or CSS and check your build against it with a visual diff. Runs locally; nothing leaves your machine.",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "@sanjeshh/framelink",
+  "version": "1.0.0",
+  "description": "Read Figma selections from your own machine and rebuild them as pixel-perfect code with any MCP-capable AI agent (Claude Code, Codex, Antigravity)",
+  "type": "module",
+  "bin": {
+    "framelink": "./dist/mcp.cjs"
+  },
+  "files": [
+    "dist/",
+    "figma-plugin/"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "tsx plugin/outline.check.ts && tsx plugin/serializer.check.ts && tsx src/mcp/verify.check.ts && tsx src/mcp/link.check.ts && tsx src/plugin.check.ts",
+    "bench": "tsx plugin/outline.bench.ts",
+    "dev:mcp": "tsx src/mcp/server.ts",
+    "prepublishOnly": "npm run check && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "@types/ws": "^8.5.10",
+    "esbuild": "^0.20.0",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "ws": "^8.15.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "antigravity",
+    "claude",
+    "code-generation",
+    "codex",
+    "design-to-code",
+    "figma",
+    "figma-plugin",
+    "mcp",
+    "model-context-protocol",
+    "pixel-perfect"
+  ],
+  "license": "MIT"
+}

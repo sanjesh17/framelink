@@ -1,0 +1,21 @@
+{
+  "name": "FrameLink",
+  "id": "figma-claude-local-plugin",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "src/ui.html",
+  "editorType": [
+    "figma"
+  ],
+  "documentAccess": "read",
+  "networkAccess": {
+    "allowedDomains": [
+      "ws://localhost:3333"
+    ],
+    "devAllowedDomains": [
+      "ws://localhost:3333"
+    ],
+    "reasoning": "Connects to the FrameLink bridge running on this computer (ws://localhost:3333), which hands the current Figma selection to your AI coding agent. Nothing leaves your machine."
+  },
+  "permissions": []
+}
